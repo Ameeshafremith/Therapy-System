@@ -4,7 +4,7 @@
 
 /* TOP BAR */
 .top-bar {
-    -fx-background-color: linear-gradient(to right, #2563eb, #60a5fa);
+    -fx-background-color: #21b4c4;
     -fx-padding: 12 20;
     -fx-alignment: center-left;
 }
@@ -32,13 +32,13 @@
 
 /* SIDEBAR */
 .sidebar {
-    -fx-background-color: #0f172a;
+    -fx-background-color: #10362c;
     -fx-pref-width: 220;
     -fx-padding: 20;
 }
 
 .menu-title {
-    -fx-text-fill: #94a3b8;
+    -fx-text-fill: #94b8a2;
     -fx-font-size: 12px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .nav-btn:hover {
-    -fx-background-color: #1e293b;
+    -fx-background-color: #1e3b35;
     -fx-background-radius: 8;
 }
 

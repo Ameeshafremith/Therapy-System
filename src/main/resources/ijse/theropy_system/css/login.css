@@ -4,11 +4,11 @@
 
 /* Background gradient */
 .background-layer {
-    -fx-background-color: linear-gradient(to bottom right, #dbeafe, #eff6ff, #e0f2fe);
+    -fx-background-color: linear-gradient(to bottom right, #dbfefe, #effeff, #e0fefb);
 }
 
 /* Floating bubbles */
-.bubble {
+/*.bubble {
     -fx-fill: rgba(59, 130, 246, 0.18);
 }
 
@@ -22,7 +22,7 @@
 
 .bubble4 {
     -fx-fill: rgba(186, 230, 253, 0.20);
-}
+}*/
 
 /* Login card (glass effect) */
 .login-card {
@@ -36,12 +36,12 @@
 .login-title {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1e3a8a;
+    -fx-text-fill: #15696e;
 }
 
 /* Subtitle */
 .login-subtitle {
-    -fx-text-fill: #64748b;
+    -fx-text-fill: #648b8a;
 }
 
 /* Input fields */
@@ -49,19 +49,19 @@
     -fx-background-color: white;
     -fx-background-radius: 10;
     -fx-border-radius: 10;
-    -fx-border-color: #cbd5e1;
+    -fx-border-color: #cbe1de;
     -fx-padding: 8 12;
     -fx-font-size: 13px;
 }
 
 .input-field:focused {
-    -fx-border-color: #3b82f6;
+    -fx-border-color: #3bd7f6;
     -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.25), 10, 0.3, 0, 0);
 }
 
 /* Login button */
 .login-button {
-    -fx-background-color: linear-gradient(to right, #3b82f6, #60a5fa);
+    -fx-background-color: linear-gradient(to right, #3bd7f6, #60d6fa);
     -fx-text-fill: white;
     -fx-background-radius: 10;
     -fx-font-weight: bold;
@@ -69,19 +69,19 @@
 }
 
 .login-button:hover {
-    -fx-background-color: linear-gradient(to right, #2563eb, #3b82f6);
+    -fx-background-color: linear-gradient(to right, #3bd7f6, #3bc1f6);
 }
 
 /* Footer text */
 .footer-text {
     -fx-font-size: 11px;
-    -fx-text-fill: #94a3b8;
+    -fx-text-fill: #94b8b7;
 }
 
 /* Toggle buttons (Role selection) */
 .role-toggle {
     -fx-background-color: #e2e8f0;
-    -fx-text-fill: #334155;
+    -fx-text-fill: #335555;
     -fx-background-radius: 10;
     -fx-border-radius: 10;
     -fx-padding: 8 15;
@@ -91,7 +91,7 @@
 
 /* Selected toggle */
 .role-toggle:selected {
-    -fx-background-color: linear-gradient(to right, #3b82f6, #60a5fa);
+    -fx-background-color: linear-gradient(to right, #3bd7f6, #60faed);
     -fx-text-fill: white;
 }
 

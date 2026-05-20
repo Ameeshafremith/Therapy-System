@@ -24,10 +24,10 @@
               prefHeight="720"/>
 
         <!-- Bubbles -->
-        <Circle layoutX="120" layoutY="140" radius="60" styleClass="bubble"/>
+        <!--<Circle layoutX="120" layoutY="140" radius="60" styleClass="bubble"/>
         <Circle layoutX="260" layoutY="520" radius="90" styleClass="bubble2"/>
         <Circle layoutX="1050" layoutY="160" radius="70" styleClass="bubble3"/>
-        <Circle layoutX="900" layoutY="600" radius="110" styleClass="bubble4"/>
+        <Circle layoutX="900" layoutY="600" radius="110" styleClass="bubble4"/>-->
 
         <!-- Login Card -->
         <VBox alignment="CENTER"
