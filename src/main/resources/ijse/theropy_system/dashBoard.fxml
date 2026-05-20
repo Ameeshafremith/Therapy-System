@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ijse.theropy_system.controller.DashboardController"
+            stylesheets="@css/dashboard.css"
+            prefWidth="900"
+            prefHeight="600">
+
+    <children>
+
+        <!-- Title -->
+        <Label text="Dashboard"
+               styleClass="dash-title"
+               AnchorPane.topAnchor="15"
+               AnchorPane.leftAnchor="20"/>
+
+        <!-- Welcome Card -->
+        <VBox spacing="5"
+              styleClass="welcome-card"
+              AnchorPane.topAnchor="60"
+              AnchorPane.leftAnchor="20"
+              AnchorPane.rightAnchor="20">
+
+            <Label text="Welcome Back!"
+                   styleClass="welcome-title"/>
+
+            <Label text="Here is your therapy center overview"
+                   styleClass="welcome-subtitle"/>
+
+        </VBox>
+
+        <!-- Cards -->
+        <HBox spacing="20"
+              AnchorPane.topAnchor="180"
+              AnchorPane.leftAnchor="20"
+              AnchorPane.rightAnchor="20">
+
+            <VBox styleClass="stat-card" prefWidth="200">
+                <Label text="Patients" styleClass="card-title"/>
+                <Label fx:id="lblPatients" text="120" styleClass="card-value"/>
+            </VBox>
+
+            <VBox styleClass="stat-card" prefWidth="200">
+                <Label text="Therapists" styleClass="card-title"/>
+                <Label fx:id="lblDoctors" text="12" styleClass="card-value"/>
+            </VBox>
+
+            <VBox styleClass="stat-card" prefWidth="200">
+                <Label text="Sessions" styleClass="card-title"/>
+                <Label fx:id="lblAppointments" text="35" styleClass="card-value"/>
+            </VBox>
+
+            <VBox styleClass="stat-card" prefWidth="200">
+                <Label text="Programs" styleClass="card-title"/>
+                <Label fx:id="lblSessions" text="18" styleClass="card-value"/>
+            </VBox>
+
+        </HBox>
+
+    </children>
+
+</AnchorPane>

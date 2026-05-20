@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ijse.theropy_system.controller.LoginController"
+            prefWidth="1920"
+            prefHeight="1080"
+            stylesheets="@css/login.css">
+
+    <!-- Non-visual objects -->
+    <fx:define>
+        <ToggleGroup fx:id="roleGroup"/>
+    </fx:define>
+
+    <children>
+
+        <!-- Background -->
+        <Pane styleClass="background-layer"
+              prefWidth="1280"
+              prefHeight="720"/>
+
+        <!-- Bubbles -->
+        <Circle layoutX="120" layoutY="140" radius="60" styleClass="bubble"/>
+        <Circle layoutX="260" layoutY="520" radius="90" styleClass="bubble2"/>
+        <Circle layoutX="1050" layoutY="160" radius="70" styleClass="bubble3"/>
+        <Circle layoutX="900" layoutY="600" radius="110" styleClass="bubble4"/>
+
+        <!-- Login Card -->
+        <VBox alignment="CENTER"
+              spacing="15"
+              layoutX="440"
+              layoutY="170"
+              prefWidth="400"
+              prefHeight="420"
+              styleClass="login-card">
+
+            <children>
+
+                <Label text="Mental Health Therapy Center"
+                       styleClass="login-title"/>
+
+                <Label text="Welcome back"
+                       styleClass="login-subtitle"/>
+
+                <!-- Role Toggle Buttons -->
+                <HBox spacing="10" alignment="CENTER">
+
+                    <ToggleButton fx:id="btnAdmin"
+                                  text="Admin"
+                                  toggleGroup="$roleGroup"
+                                  prefWidth="120"
+                                  styleClass="role-toggle"/>
+
+                    <ToggleButton fx:id="btnTherapist"
+                                  text="Receptionist"
+                                  toggleGroup="$roleGroup"
+                                  prefWidth="120"
+                                  styleClass="role-toggle"/>
+
+                </HBox>
+
+                <TextField fx:id="txtUsername"
+                           promptText="Username"
+                           prefHeight="40"
+                           styleClass="input-field"/>
+
+                <PasswordField fx:id="txtPassword"
+                               promptText="Password"
+                               prefHeight="40"
+                               styleClass="input-field"/>
+
+                <Button fx:id="btnLogin"
+                        text="Login"
+                        prefWidth="220"
+                        prefHeight="42"
+                        styleClass="login-button"/>
+
+                <Label text="Secure access only"
+                       styleClass="footer-text"/>
+
+            </children>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

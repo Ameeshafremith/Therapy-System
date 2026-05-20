@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="720" prefWidth="1280" stylesheets="@css/layout.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.theropy_system.controller.LayoutController">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox spacing="15" styleClass="top-bar">
+
+            <Label styleClass="app-title" text="MindSpring Therapy" />
+
+            <Region HBox.hgrow="ALWAYS" />
+
+            <Label fx:id="lblUser" styleClass="user-label" text="Welcome" />
+
+            <Button fx:id="btnLogout" onAction="#btnLogout" styleClass="logout-btn" text="Logout" />
+
+        </HBox>
+    </top>
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox spacing="10" styleClass="sidebar">
+
+            <Label styleClass="menu-title" text="NAVIGATION" />
+
+            <Button fx:id="btnDashboard" onAction="#btnDashboard" styleClass="nav-btn" text="Dashboard" />
+
+            <Button fx:id="btnPatients" onAction="#btnPatients" styleClass="nav-btn" text="Patients" />
+
+            <Button fx:id="btnTherapist" onAction="#btnTherapist" styleClass="nav-btn" text="Therapist" />
+
+            <Button fx:id="btnSession" onAction="#btnSession" styleClass="nav-btn" text="Therapy Session" />
+
+            <Button fx:id="btnProgram" onAction="#btnProgram" styleClass="nav-btn" text="Therapy Program" />
+
+            <Button fx:id="btnReports" onAction="#btnReports" styleClass="nav-btn" text="Reports" />
+
+        </VBox>
+    </left>
+
+    <!-- MAIN CONTENT AREA -->
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area" />
+    </center>
+
+</BorderPane>

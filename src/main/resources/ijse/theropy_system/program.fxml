@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600"
+            prefWidth="900"
+            stylesheets="@css/program.css"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ijse.theropy_system.controller.ProgramController">
+
+    <children>
+
+        <!-- Title -->
+        <Label layoutX="20"
+               layoutY="15"
+               styleClass="page-title"
+               text="Therapy Program Management" />
+
+        <!-- Form Section -->
+        <VBox layoutX="20"
+              layoutY="60"
+              prefHeight="260"
+              prefWidth="843"
+              spacing="10"
+              styleClass="form-card">
+
+            <Label styleClass="section-title"
+                   text="Program Details" />
+
+            <!-- Two Column Layout -->
+            <HBox prefWidth="813">
+
+                <children>
+
+                    <!-- Left Side -->
+                    <VBox prefWidth="390"
+                          spacing="10">
+
+                        <TextField fx:id="txtProgramId"
+                                   promptText="Program ID"
+                                   styleClass="input-field" />
+
+                        <TextField fx:id="txtDuration"
+                                   promptText="Duration"
+                                   styleClass="input-field" />
+
+                    </VBox>
+
+                    <!-- Right Side -->
+                    <VBox prefWidth="390"
+                          spacing="10">
+
+                        <TextField fx:id="txtProgramName"
+                                   promptText="Program Name"
+                                   styleClass="input-field" />
+
+                        <TextField fx:id="txtCost"
+                                   promptText="Program Cost"
+                                   styleClass="input-field" />
+
+                    </VBox>
+
+                </children>
+
+            </HBox>
+
+            <!-- Description -->
+            <TextArea fx:id="txtDescription"
+                      prefRowCount="4"
+                      promptText="Program Description"
+                      styleClass="input-field" />
+
+            <!-- Buttons -->
+            <HBox spacing="10">
+
+                <Button fx:id="btnSave"
+                        styleClass="btn-save"
+                        text="Save" />
+
+                <Button fx:id="btnUpdate"
+                        styleClass="btn-update"
+                        text="Update" />
+
+                <Button fx:id="btnDelete"
+                        styleClass="btn-delete"
+                        text="Delete" />
+
+            </HBox>
+
+        </VBox>
+
+        <!-- Table Section -->
+        <TableView fx:id="tblPrograms"
+                   layoutX="22"
+                   layoutY="330"
+                   prefHeight="240"
+                   prefWidth="856"
+                   styleClass="table-view">
+
+            <columns>
+
+                <TableColumn prefWidth="100"
+                             text="Program ID" />
+
+                <TableColumn prefWidth="220"
+                             text="Program Name" />
+
+                <TableColumn prefWidth="150"
+                             text="Duration" />
+
+                <TableColumn prefWidth="120"
+                             text="Cost" />
+
+                <TableColumn prefWidth="260"
+                             text="Description" />
+
+            </columns>
+
+        </TableView>
+
+    </children>
+
+</AnchorPane>

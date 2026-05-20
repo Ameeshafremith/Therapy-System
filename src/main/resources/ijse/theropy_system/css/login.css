@@ -1,0 +1,101 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+/* Background gradient */
+.background-layer {
+    -fx-background-color: linear-gradient(to bottom right, #dbeafe, #eff6ff, #e0f2fe);
+}
+
+/* Floating bubbles */
+.bubble {
+    -fx-fill: rgba(59, 130, 246, 0.18);
+}
+
+.bubble2 {
+    -fx-fill: rgba(147, 197, 253, 0.22);
+}
+
+.bubble3 {
+    -fx-fill: rgba(96, 165, 250, 0.18);
+}
+
+.bubble4 {
+    -fx-fill: rgba(186, 230, 253, 0.20);
+}
+
+/* Login card (glass effect) */
+.login-card {
+    -fx-background-color: rgba(255, 255, 255, 0.78);
+    -fx-background-radius: 22;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 25, 0.2, 0, 8);
+}
+
+/* Title */
+.login-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a8a;
+}
+
+/* Subtitle */
+.login-subtitle {
+    -fx-text-fill: #64748b;
+}
+
+/* Input fields */
+.input-field {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #cbd5e1;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+}
+
+.input-field:focused {
+    -fx-border-color: #3b82f6;
+    -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.25), 10, 0.3, 0, 0);
+}
+
+/* Login button */
+.login-button {
+    -fx-background-color: linear-gradient(to right, #3b82f6, #60a5fa);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: linear-gradient(to right, #2563eb, #3b82f6);
+}
+
+/* Footer text */
+.footer-text {
+    -fx-font-size: 11px;
+    -fx-text-fill: #94a3b8;
+}
+
+/* Toggle buttons (Role selection) */
+.role-toggle {
+    -fx-background-color: #e2e8f0;
+    -fx-text-fill: #334155;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+/* Selected toggle */
+.role-toggle:selected {
+    -fx-background-color: linear-gradient(to right, #3b82f6, #60a5fa);
+    -fx-text-fill: white;
+}
+
+/* Hover effect */
+.role-toggle:hover {
+    -fx-background-color: #cbd5e1;
+}
