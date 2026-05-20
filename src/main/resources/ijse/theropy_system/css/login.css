@@ -8,7 +8,8 @@
 }
 
 /* Floating bubbles */
-/*.bubble {
+/*
+.bubble {
     -fx-fill: rgba(59, 130, 246, 0.18);
 }
 
@@ -22,7 +23,8 @@
 
 .bubble4 {
     -fx-fill: rgba(186, 230, 253, 0.20);
-}*/
+}
+*/
 
 /* Login card (glass effect) */
 .login-card {
